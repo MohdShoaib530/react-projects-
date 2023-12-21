@@ -1,5 +1,6 @@
 .App{
   display: flex;
+  flex-direction: column;
 }
 .App-logo {
   height: 10vmin;
@@ -44,3 +45,8 @@
 .Dog2 {
   height: 30vmin;
   margin: 20px ;}
+
+  .Header{
+    display: flex;
+
+  }
