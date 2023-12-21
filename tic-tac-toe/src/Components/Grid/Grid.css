@@ -6,3 +6,7 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.grid-highlight {
+    color: rgb(14, 162, 27);
+}
