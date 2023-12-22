@@ -1,0 +1,17 @@
+
+.twoplayers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius:20%;
+}
+.playerColor {
+    color: rgb(244, 244, 244);
+    font-size: 50px;
+}
+.player {
+    font-size: 55px;
+    color: yellow;
+}
