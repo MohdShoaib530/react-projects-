@@ -40,7 +40,7 @@ function Grid({numberOfCards}){
             }
             <h1 className="turn-highlight">Current turn:{(turn) ? "O" : "X"}</h1>
             <div className="grid">
-               {board.map((el,ind) => <Card key={ind} onPlay={play} player={el} index={ind}/>)}
+               {board.map((el,ind) => <Card gameEnd={winner ? true : false }key={ind} onPlay={play} player={el} index={ind}/>)}
             </div>
         </div>
     )
