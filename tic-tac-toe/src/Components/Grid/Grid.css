@@ -1,12 +1,12 @@
 .grid {
     width: 600px;
-    height: 500px;
+    height: 700px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
 
-.grid-highlight {
+.turn-highlight {
     color: rgb(14, 162, 27);
 }

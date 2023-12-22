@@ -1,6 +1,6 @@
 import Icon from "../Icons/Icon";
 import "./Card.css" 
-function Card({player}){
+function Card({player, onPlay, index}){
     let icon = <Icon/>
 
     if(player === "X"){
@@ -10,7 +10,7 @@ function Card({player}){
     }
 
     return (
-        <div className="card">
+        <div className="card" onClick={() => onPlay(index)}>
             {icon}
         </div>
     )
