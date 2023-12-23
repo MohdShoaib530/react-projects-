@@ -9,4 +9,9 @@
 
 .turn-highlight {
     color: rgb(14, 162, 27);
+    font-size: 69px;
+}
+.reset{
+    font-size: 35px;
+    border-radius: 19px;
 }
