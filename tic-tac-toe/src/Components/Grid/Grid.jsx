@@ -25,10 +25,11 @@ function Grid({numberOfCards,player1,player2}){
         setTurn(!turn)
     }
     
-    function reset(){
-        setTurn(true);
+    function reset() {
+        let arr = [true, false];
+        setTurn(arr[Math.floor(Math.random() * 2)]);
         setWinner(null);
-        setBoard(Array(numberOfCards).fill(""))
+        setBoard(Array(numberOfCards).fill(""));
     }
     return (
         <div className="grid-wrapper">
