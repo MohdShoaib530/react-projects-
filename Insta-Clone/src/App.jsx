@@ -1,34 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import { useState } from 'react'
+import { Sign } from './Button'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+   const [signIn,setSingUp] = useState(true)
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className='insta-wrapper'>
+      <h1 className='insta-heading'>Instagram</h1>
+      {signIn ? (
+        <div className="signIn">
+          <input type='text' placeholder='Phone Number, username or email' id='input'></input>
+          <input type='text' placeholder='Password' id='input'></input><br></br>
+          <Sign sign="SignIn"/>
+          <h3 >Don't have account? <a onClick={() => setSingUp(!signIn)} id='sign'>SignUp</a></h3>
+        </div>
+      ) : (
+        <div className='signUp'>
+          <input type='text' placeholder='Phone Number or email' id='input'></input>
+          <input type='text' placeholder='Full Name' id='input'></input>
+          <input type='text' placeholder='Password' id='input'></input><br></br>
+          <Sign sign="SignUp"/>
+          <h3 >have an account <a onClick={() => setSingUp(!signIn)} id='sign'>SignIn</a></h3>
+        </div>
+      )}
+    </div>
   )
 }
 
