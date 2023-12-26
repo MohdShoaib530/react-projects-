@@ -21,10 +21,10 @@
 
 #input {
   padding: .3rem .5rem;
-  font-size: 30px;
-  margin: 5px;
-  border-radius: 5px;
-  box-shadow: .5px .5px ;
+  font-size: 1rem;
+  margin: .5rem;
+  border-radius: .5rem;
+  box-shadow: .1rem .1rem ;
 }
 
 #sign {
