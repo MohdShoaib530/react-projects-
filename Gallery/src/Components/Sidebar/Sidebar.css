@@ -1,0 +1,31 @@
+.sidebar {
+    width: 13.4%;
+    /* border: 2px solid #ccc; */
+    /* height: 100%; */
+    background-color: #f1f1f1;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    overflow-x: hidden;
+    margin-top: 20px;
+    padding: 7px 0 0 20px;
+    border-top-right-radius: 20%;
+}
+
+.sidebar div {
+    margin: 14.5px 0;
+
+}
+
+.sidebar div span {
+    font-size: 24px;
+
+}
+
+.sidebar div span:hover {
+    color: #aaa;
+    cursor: pointer;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    padding: 6px 25px ;
+}
