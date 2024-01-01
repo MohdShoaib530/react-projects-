@@ -2,10 +2,9 @@ import { useParams } from "react-router-dom";
 import './PokemonDetails.css'
 import usePokemonDetails from "../../hooks/usePokemonDetails";
 
-function PokemonDetails() {
+function PokemonDetails({pokemonName}) {
   const {id} = useParams();
-  const [pokemonDetails ] = usePokemonDetails(id)
-  console.log("details",pokemonDetails.similarType);
+  const [pokemonDetails ] = usePokemonDetails(id,pokemonName)
   return (
     <div className="pokemon-details-wrapper">
       <div className="pokemon-details-name">Name: {pokemonDetails.name}</div>
